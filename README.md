@@ -2,9 +2,9 @@
 Web based bookstore created for an Ecommerce class
 
 
-''' SQL CREATE TABLES '''
+```SQL CREATE TABLES ```
 
-'''
+```
 CREATE TABLE book (
     ISBN CHAR(10) PRIMARY KEY, 
     title VARCHAR(255) NOT NULL, 
@@ -25,4 +25,4 @@ CREATE TABLE purchases (
     FOREIGN KEY (isbn) REFERENCES book(ISBN) ON DELETE CASCADE,
     FOREIGN KEY (custID) REFERENCES customer(id) ON DELETE CASCADE
 );
-'''
+```
