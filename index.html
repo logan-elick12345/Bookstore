@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome!</h2>
+        <form action="login.php" method="GET">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <br>
+            <button type="submit" name="act" value="signUp">Sign Up</button>
+            <button type="submit" name="act" value="signIn">Sign In</button>
+        </form>
+        
+        <form action="clearSystem.php" method="POST">
+            <button type="submit" class="clear-system-btn">Clear System</button>
+        </form>        
+    </div>
+
+    <div class="container">
+        
+        <form action="check.php" method="GET">
+            <input type="text" name="password" placeholder="Display Password" required>
+            <select id="options" name="options">
+                <option value="login">login.php</option>
+                <option value="loginClass">LoginClass.php</option>
+                <option value="index">index.html</option>
+                <option value="processPurchase">processPurchase.php</option>
+                <option value="return">return.php</option>
+                <option value="addBook">addBook.php</option>
+                <option value="adminScreen">adminScreen.php</option>
+                <option value="bookList">bookList.php</option>
+                <option value="bookInfo">bookInfo.php</option>
+                <option value="clearSystem">clearSystem.php</option>
+                <option value="dashboard">dashboard.php</option>
+                <option value="database">database.php</option>
+                <option value="userList">userList.php</option>
+                <option value="userInfo">userinfo.php</option>
+                </select>
+            <button type="submit" class="clear-system-btn">Display Source</button>
+
+        </form>        
+    </div>
+</body>
+</html>
